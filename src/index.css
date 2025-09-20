@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Portfolio Design System - Inspired by serene classroom twilight aesthetic */
+
+@layer base {
+  :root {
+    /* Core twilight classroom theme */
+    --background: 220 25% 8%;
+    --foreground: 210 20% 95%;
+    
+    /* Card elements with glass-like transparency */
+    --card: 220 25% 12%;
+    --card-foreground: 210 20% 95%;
+    
+    /* Popover elements */
+    --popover: 220 25% 10%;
+    --popover-foreground: 210 20% 95%;
+    
+    /* Primary - soft educational blue */
+    --primary: 210 75% 65%;
+    --primary-foreground: 220 25% 8%;
+    
+    /* Secondary - warm teacher accent */
+    --secondary: 220 20% 20%;
+    --secondary-foreground: 210 20% 90%;
+    
+    /* Muted elements */
+    --muted: 220 20% 15%;
+    --muted-foreground: 210 15% 70%;
+    
+    /* Accent - gentle highlight */
+    --accent: 210 60% 55%;
+    --accent-foreground: 220 25% 8%;
+    
+    /* Destructive (rarely used) */
+    --destructive: 0 75% 60%;
+    --destructive-foreground: 210 20% 95%;
+    
+    /* Borders and inputs */
+    --border: 220 20% 20%;
+    --input: 220 20% 15%;
+    --ring: 210 75% 65%;
+
+    --radius: 0.75rem;
+    
+    /* Portfolio-specific tokens */
+    --hero-glow: 210 80% 70%;
+    --glass-bg: 220 25% 12% / 0.7;
+    --glass-border: 210 40% 40% / 0.3;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(210 75% 65% / 0.1), hsl(220 60% 50% / 0.1));
+    --gradient-card: linear-gradient(145deg, hsl(220 25% 12% / 0.8), hsl(220 20% 15% / 0.9));
+    
+    /* Shadows */
+    --shadow-glow: 0 0 40px hsl(var(--hero-glow) / 0.2);
+    --shadow-card: 0 8px 32px hsl(220 25% 5% / 0.4);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground overflow-x-hidden;
+    background-image: url('@/assets/classroom-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: hsl(var(--glass-bg));
+    border: 1px solid hsl(var(--glass-border));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+  
+  .hero-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .smooth-transition {
+    transition: var(--transition-smooth);
+  }
+  
+  .bounce-transition {
+    transition: var(--transition-bounce);
+  }
+}
