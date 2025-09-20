@@ -53,7 +53,7 @@ const TeachingExperience = () => {
               <div className="w-16 h-16 mx-auto rounded-full bg-primary/20 flex items-center justify-center mb-4">
                 <Heart size={32} className="text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Daycare</h3>
+              <h3 className="text-xl font-semibold mb-3">Prison Ministry</h3>
               <p className="text-muted-foreground mb-4">
                 Providing nurturing care and early learning opportunities in 
                 a safe, loving environment for the youngest learners.
