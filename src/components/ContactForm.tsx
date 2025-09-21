@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Send, User, MessageCircle } from "lucide-react";
+import { Mail, Send, User, MessageCircle, Phone, Linkedin, Facebook, MessageSquare } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const ContactForm = () => {
@@ -56,7 +56,9 @@ const ContactForm = () => {
 
         <Card className="glass-card border-primary/20">
           <CardContent className="p-8">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <Label htmlFor="name" className="flex items-center gap-2">
@@ -143,7 +145,48 @@ const ContactForm = () => {
                   </>
                 )}
               </Button>
-            </form>
+                </form>
+              </div>
+
+              {/* Contact details column */}
+              <aside className="pt-2">
+                <h3 className="text-xl font-semibold mb-4 text-primary">Other ways to reach me</h3>
+                <p className="text-muted-foreground mb-4">Quick links and direct contact information.</p>
+
+                <ul className="space-y-3 text-left">
+                  <li className="flex items-center gap-3">
+                    <Phone size={18} />
+                    <a href="sms:+639214129494" aria-label="Send SMS to +63 921 412 9494" className="hover:underline">+63 921 412 9494</a>
+                  </li>
+
+                  <li className="flex items-center gap-3">
+                    <Mail size={18} />
+                    <a href="mailto:mesinadm32@gmail.com" aria-label="Send email to mesinadm32@gmail.com" className="hover:underline">mesinadm32@gmail.com</a>
+                  </li>
+
+                  <li className="flex items-center gap-3">
+                    <Linkedin size={18} />
+                    <a href="https://ph.linkedin.com/in/donna-mesina-314a03354" target="_blank" rel="noreferrer" className="hover:underline">LinkedIn</a>
+                  </li>
+
+                  <li className="flex items-center gap-3">
+                    <MessageSquare size={18} />
+                    <span>WeChat: your-wechat-id</span>
+                  </li>
+
+                  <li className="flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-green-500"><path d="M21 11.5a8.38 8.38 0 0 1-1.9 5.4L22 22l-5.1-2.5a8.5 8.5 0 1 1 4.1-8z"></path><path d="M22 22l-2-2"></path></svg>
+                    <a href="https://wa.me/639214129494" target="_blank" rel="noreferrer" aria-label="Open WhatsApp chat with +63 921 412 9494" className="hover:underline">WhatsApp</a>
+                  </li>
+
+                  <li className="flex items-center gap-3">
+                    <Facebook size={18} />
+                    <a href="https://www.facebook.com/Dmjmesina" target="_blank" rel="noreferrer" className="hover:underline">Facebook</a>
+                  </li>
+                </ul>
+              </aside>
+
+            </div>
 
             <div className="mt-8 pt-6 border-t border-primary/20 text-center">
               <p className="text-muted-foreground">
