@@ -13,14 +13,14 @@ const HeroSection = () => {
   return (
     <section className="min-h-screen flex items-center justify-center px-6 py-20">
       <div className="max-w-4xl mx-auto text-center">
-        <div className="glass-card rounded-2xl p-8 md:p-12 hero-glow smooth-transition hover:scale-105">
+  <div className="glass-card rounded-2xl p-8 md:p-12 md:pb-20 hero-glow smooth-transition hover:scale-105 overflow-visible">
           <div className="mb-6">
             <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center mb-6 border-2 border-primary/30">
               <GraduationCap size={64} className="text-primary" />
             </div>
           </div>
           
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent leading-[1.02] md:leading-[1.3]">
             Teaching with Purpose
           </h1>
           
