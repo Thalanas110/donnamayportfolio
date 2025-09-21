@@ -94,11 +94,22 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 120px;
-    background: linear-gradient(to top, rgba(255,255,255,0.7) 60%, rgba(255,255,255,0.2) 100%, transparent 100%);
-    filter: blur(16px);
-    z-index: 20;
+    height: 160px; /* taller so the fog is visible */
+    /* bluish, subtle fog that matches the twilight classroom theme */
+    background: linear-gradient(to top,
+      rgba(8, 20, 34, 0.95) 0%,   /* deep near bottom */
+      rgba(12, 22, 38, 0.9) 20%,
+      rgba(18, 28, 44, 0.7) 45%,
+      rgba(18, 28, 44, 0.28) 75%,
+      transparent 100%
+    );
+    /* subtle blur for softness */
+    filter: blur(10px);
+    /* sit behind content but above the background overlay */
+    z-index: 15;
     pointer-events: none;
+    mix-blend-mode: normal;
+    opacity: 1;
   }
   
   /* Custom scrollbar */

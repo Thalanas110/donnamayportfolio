@@ -19,11 +19,6 @@ const Portfolio = () => {
         <TeachingExperience />
         <TechBackground />
         <ContactForm />
-
-        {/* Footer */}
-        <footer className="py-8 px-6 text-center text-muted-foreground">
-          <p>&copy; 2024 Donna May J. Mesina • All rights reserved.</p>
-        </footer>
       </div>
     </div>
   );
