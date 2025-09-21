@@ -55,8 +55,8 @@ const TeachingExperience = () => {
               </div>
               <h3 className="text-xl font-semibold mb-3">Prison Ministry</h3>
               <p className="text-muted-foreground mb-4">
-                Providing nurturing care and early learning opportunities in 
-                a safe, loving environment for the youngest learners.
+                Teaching the Gospel inside the prision, while also providing
+                a supportive environment for prisoners.
               </p>
               <div className="flex flex-wrap gap-2 justify-center">
                 <Badge variant="secondary">Child Development</Badge>
@@ -96,22 +96,18 @@ const TeachingExperience = () => {
             <Card className="glass-card border-primary/20">
               <CardContent className="p-8">
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                  <h4 className="text-xl font-semibold text-primary">Kindergarten Teacher</h4>
-                  <span className="text-muted-foreground">2018 - 2020</span>
+                  <h4 className="text-xl font-semibold text-primary">Massage Therapist</h4>
+                  <span className="text-muted-foreground">2015-2017</span>
                 </div>
-                <p className="text-accent font-medium mb-2">Little Stars Academy</p>
+                <p className="text-accent font-medium mb-2">Timelessn Spa</p>
                 <p className="text-muted-foreground mb-4">
-                  Designed and implemented age-appropriate learning activities for kindergarten students, 
-                  focusing on early literacy and social development.
+                  Provided therapeutic massage services to clients, focusing on relaxation and stress relief.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">Early Childhood Education</Badge>
-                  <Badge variant="outline">Parent Communication</Badge>
-                  <Badge variant="outline">Activity Planning</Badge>
+                  <Badge variant="outline">Relaxation Techniques</Badge>
+                  <Badge variant="outline">Stress Relief</Badge>
+                  <Badge variant="outline">Client Care</Badge>
                 </div>
-                <p className="text-sm text-muted-foreground/70 mt-3 italic">
-                  * Placeholder content - please update with actual work experience
-                </p>
               </CardContent>
             </Card>
 
@@ -119,7 +115,7 @@ const TeachingExperience = () => {
               <CardContent className="p-8">
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                   <h4 className="text-xl font-semibold text-primary">Daycare Assistant</h4>
-                  <span className="text-muted-foreground">2016 - 2018</span>
+                  <span className="text-muted-foreground">no date - no date</span>
                 </div>
                 <p className="text-accent font-medium mb-2">Sunshine Daycare Center</p>
                 <p className="text-muted-foreground mb-4">
