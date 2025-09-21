@@ -7,10 +7,10 @@ const AboutSection = () => {
   return (
     <section className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-primary">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-primary">
           About Me
         </h2>
-        <h3 className="text-xl md:text-2xl font-semibold text-center mb-8 text-accent">
+        <h3 className="text-xl md:text-2xl font-semibold text-center mb-4 text-accent">
           Who exactly am I in the eyes of the world and to God?
         </h3>
         

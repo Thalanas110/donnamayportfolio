@@ -75,21 +75,46 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    position: relative;
+  }
+
+  /* Overlay for darkening background */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(20, 20, 20, 0.55); /* darker overlay */
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Sticky fog effect at bottom */
+  .sticky-fog {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 120px;
+    background: linear-gradient(to top, rgba(255,255,255,0.7) 60%, rgba(255,255,255,0.2) 100%, transparent 100%);
+    filter: blur(16px);
+    z-index: 20;
+    pointer-events: none;
   }
   
   /* Custom scrollbar */
   ::-webkit-scrollbar {
     width: 8px;
   }
-  
+
   ::-webkit-scrollbar-track {
     background: hsl(var(--muted));
   }
-  
+
   ::-webkit-scrollbar-thumb {
     background: hsl(var(--primary));
     border-radius: 4px;
   }
+
 }
 
 @layer components {
