@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Send, User, MessageCircle, Phone, Linkedin, Facebook, MessageSquare } from "lucide-react";
+import { Mail, Send, User, MessageCircle, Phone, Linkedin, Facebook, MessageSquare, Github } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const ContactForm = () => {
@@ -182,6 +182,11 @@ const ContactForm = () => {
                   <li className="flex items-center gap-3">
                     <Facebook size={18} />
                     <a href="https://www.facebook.com/Dmjmesina" target="_blank" rel="noreferrer" className="hover:underline">Facebook</a>
+                  </li>
+
+                  <li className="flex items-center gap-3">
+                    <Github size={18} />
+                    <a href="https://github.com/Dmjm99125" target="_blank" rel="noreferrer" className="hover:underline">GitHub</a>
                   </li>
                 </ul>
               </aside>
